@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="4dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorBrown"
+        android:padding="16dp"
+        android:typeface="sans"
+        android:text="@string/tv_how_was_service"/>
+    <RatingBar
+        android:id="@+id/rating_company"
+        style="?android:attr/accessibilityEventTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize=".1"
+        android:scaleX="0.8"
+        android:scaleY="0.8" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorBrown"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:typeface="sans"
+        android:text="@string/tv_write_review"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:background="@drawable/shape_rect_f_white_s_black">
+
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:lines="2"
+            android:padding="16dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColorHint="#cccccc"
+            android:hint="@string/tv_share_experience"/>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/darkOrange"
+            android:text="@string/dialog_action_ok"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

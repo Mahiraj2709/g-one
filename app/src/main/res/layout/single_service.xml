@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/shape_rect_f_white_s_black"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:padding="16dp">
+    <RelativeLayout
+        android:id="@+id/tl_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_requestId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request ID-34343"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/tl_one"
+        android:id="@+id/rl_two"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_serviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wheel Change"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_marginBottom="6dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/rl_two"
+        android:id="@+id/tv_serviceDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23-10-2016"/>
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_centerVertical="true"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_right_arrow"/>
+</RelativeLayout>

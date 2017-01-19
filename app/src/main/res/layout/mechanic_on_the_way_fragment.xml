@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="220dp"
+        android:orientation="vertical">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_profile"
+            android:src="@color/colorPrimaryDark"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            app:civ_border_color="@android:color/transparent"
+            app:civ_border_width="4dp" />
+        <TextView
+            android:id="@+id/tv_mechName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:gravity="center_horizontal"
+            android:text="Name"/>
+        <RatingBar
+            android:id="@+id/rating_company"
+            style="?android:attr/accessibilityEventTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize=".1"
+            android:scaleX="0.6"
+            android:scaleY="0.6" />
+
+        <TextView
+            android:id="@+id/btn_callMech"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:background="@drawable/shape_rect_f_white_s_black"
+            android:layout_marginBottom="4dp"
+            android:text="@string/btn_call_mech"
+            android:textColor="#404040" />
+
+        <TextView
+            android:id="@+id/btn_cancelReq"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:background="@color/darkOrange"
+            android:text="@string/btn_cancel_request"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

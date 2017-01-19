@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "29388920969",
+    "firebase_url": "https://glympse-92852.firebaseio.com",
+    "project_id": "glympse-92852",
+    "storage_bucket": "glympse-92852.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29388920969:android:0fa9a18268efbe7e",
+        "android_client_info": {
+          "package_name": "customer.glympse.glympse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29388920969-5bpfgisuj2an7u6upsb772rnk1esfg13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC88FUEQSd28ykg7cn0cQL2W933tDXnVIc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

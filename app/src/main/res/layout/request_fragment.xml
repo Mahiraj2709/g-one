@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:minWidth="1000dp"
+    android:minHeight="1000dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_bg"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ic_logo_2"
+        android:layout_width="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:layout_marginTop="180dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Requesting...."
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:indeterminate="true"
+        app:spb_sections_count="4"
+        app:spb_color="#FFFFFF"
+        app:spb_speed="2.0"
+        app:spb_stroke_width="4dp"
+        app:spb_stroke_separator_length="4dp"
+        app:spb_reversed="false"
+        app:spb_mirror_mode="false"
+        app:spb_progressiveStart_activated="true"
+        app:spb_progressiveStart_speed="1.5"
+        app:spb_progressiveStop_speed="3.4"
+        />
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/title_my_home" />
+    </group>
+
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myProfile"
+            android:icon="@drawable/ic_nav_name"
+            android:title="@string/title_my_profile" />
+    </group>
+
+    <group android:id="@+id/grp2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_service_history"
+            android:title="@string/title_history" />
+    </group>
+    <group android:id="@+id/grp3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_support"
+            android:title="@string/title_help" />
+    </group>
+    <group android:id="@+id/grp4" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_AboutUs"
+            android:icon="@drawable/ic_nav_name"
+            android:title="@string/title_about_us" />
+    </group>
+
+    <group android:id="@+id/grp5" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/title_logout" />
+    </group>
+
+    <group android:id="@+id/grp6" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_temp" />
+    </group>
+</menu>
